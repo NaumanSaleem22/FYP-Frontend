@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/css/index.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>LMS</title>
+</head>
+
+<body>
+  <!-- Navbar Starts -->
+  <div class="navbar-div">
+    <div>
+      Logo
+    </div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Contact Us</li>
+      <li>Dashboard</li>
+    </ul>
+
+    <div>
+      <ul class="nav-links">
+        <li>My Profile</li>
+        <li>Notifications</li>
+        <li>Logout</li>
+
+      </ul>
+    </div>
+  </div>
+  <!-- Navbar Ends -->
+
+
+  <!-- Sidebar Starts -->
+  <div class="wrapper-main">
+    <nav class="sidebar">
+      <button class="nav-toggle">
+        <i class="fas fa-angle-left"></i>
+      </button>
+
+      <ul id="primary-navigation" class="nav__list">
+
+        <li class="nav__list-divider divider-a">
+          <h3 class="nav-title">Courses</h3>
+        </li>
+
+        <li class="nav__item" data-tooltip="open folder">
+          <a href="#" class="nav__link">
+            <i>
+              <svg class="sidebar-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path></svg>
+            </i>
+            <span class="nav__link-text">Add Course</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="address">
+          <a href="#" class="nav__link">
+            <i class="fas fa-book"></i>
+            <span class="nav__link-text">View Course</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="calender">
+          <a href="#" class="nav__link">
+            <i class="fas fa-book"></i>
+            <span class="nav__link-text">Student Records</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="new message">
+          <a href="#" class="nav__link">
+            <i class="fas fa-book"></i>
+            <span class="nav__link-text">Notifications</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <ul id="secondary-navigation-a" class="nav__list">
+
+        <li class="nav__list-divider divider-b">
+          <h3 class="nav-title">Lectures</h3>
+        </li>
+
+        <li class="nav__item" data-tooltip="youtube">
+          <a href="#" class="nav__link">
+            <i class="fab fa-youtube"></i>
+            <span class="nav__link-text">Upload Lectures</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="opera">
+          <a href="#" class="nav__link">
+            <i class="fab fa-opera"></i>
+            <span class="nav__link-text">View Lectures</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="facebook">
+          <a href="#" class="nav__link">
+            <i class="fab fa-facebook-f"></i>
+            <span class="nav__link-text">Upload Quiz</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="codepen">
+          <a href="#" class="nav__link">
+            <i class="fab fa-codepen"></i>
+            <span class="nav__link-text">View Quiz</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <ul id="secondary-navigation-b" class="nav__list">
+
+        <li class="nav__list-divider divider-c">
+          <h3 class="nav-title">Examination</h3>
+        </li>
+
+        <li class="nav__item" data-tooltip="protection">
+          <a href="#" class="nav__link">
+            <i class="fas fa-shield-alt"></i>
+            <span class="nav__link-text">Add Exam</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="user settings">
+          <a href="#" class="nav__link">
+            <i class="fas fa-user-cog"></i>
+            <span class="nav__link-text">View Exam</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="settings">
+          <a href="#" class="nav__link">
+            <i class="fas fa-cog"></i>
+            <span class="nav__link-text">Upload Result</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="power off">
+          <a href="#" class="nav__link">
+            <i class="fas fa-power-off"></i>
+            <span class="nav__link-text">View Result</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Sidebar Ends -->
+
+    <!-- Body Starts -->
+    <div class="container main-div-home">
+    <div class="spacer">
+       
+    </div>
+      <div class="row justify-content-between align-items-center row1">
+        <div class="col-xl-3 first-row-col1">
+          <p class="div-title">
+            Add Course
+          </p>
+            <p class="div-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus deleniti dicta, expedita quo illum molestias
+            voluptatum enim itaque dolore officiis, eos vero iure necessitatibus et
+            facilis minima. Magnam, vitae error! 
+          </p>
+          <div class="row1-button-div">
+            <button class="row1-btn">
+              View Now
+            </button>
+          </div>
+
+        </div>
+
+        <div class="col-xl-5 first-row-col2">
+          <p class="div-title">
+            View Course
+          </p>
+            <p class="div-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus deleniti dicta, expedita quo illum molestias
+            voluptatum enim itaque dolore officiis, eos vero iure necessitatibus et
+            facilis minima. Magnam, vitae error! 
+          </p>
+          <div class="row1-button-div">
+            <button class="row1-btn">
+              View Now
+            </button>
+          </div>
+
+        </div>
+
+        <div class="col-xl-3 first-row-col3">
+        <p class="div-title">
+          Delete Course
+        </p>
+          <p class="div-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Voluptatibus deleniti dicta, expedita quo illum molestias
+          voluptatum enim itaque dolore officiis, eos vero iure necessitatibus et
+          facilis minima. Magnam, vitae error! 
+        </p>
+          <div class="row1-button-div">
+            <button class="row1-btn">
+              View Now
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="row justify-content-center align-items-center row1">
+        
+
+        <div class="col-xl-12 second-row-col1">
+          
+          <p class="div-title">
+            Notifications
+          </p>
+          <p class="div-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Voluptatibus deleniti dicta, expedita quo illum molestias
+          voluptatum enim itaque dolore officiis
+          orem ipsum dolor, sit amet consectetur adipisicing elit.
+          Voluptatibus deleniti dicta, expedita quo illum molestias
+          voluptatum enim itaque dolore officiis
+          orem ipsum dolor, sit amet consectetur adipisicing elit.
+          Voluptatibus deleniti dicta, expedita quo illum molestias
+          voluptatum enim itaque dolore officiis, eos vero iure necessitatibus et
+          orem ipsum dolor, sit a<br/> met consectetur adipisicing elit.
+          Voluptatibus deleniti dicta, expedita quo illum molestias
+          voluptatum enim itaque dolore officiis
+          facilis minima. Magnam, vitae error!</p>
+          <div class="row2-button-div">
+            <button class="row2-btn">
+              View Now
+            </button>
+          </div>
+
+        </div>
+
+         
+      </div>
+
+    </div>
+  </div>
+  <script src="assets/js/index.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
