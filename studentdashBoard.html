@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/css/index.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>LMS- Student Dashboard</title>
+</head>
+
+<body>
+  <!-- Navbar Starts -->
+  <div class="navbar-div">
+    <div>
+      Logo
+    </div>
+   
+   <div> <ul class="nav-links nav-links-mid">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Contact Us</li>
+      <li>Dashboard</li>
+    </ul>
+  </div>
+    <div>
+      <ul class="nav-links">
+        <li>My Profile</li>
+        <li>Notifications</li>
+        <li>Logout</li>
+
+      </ul>
+    </div>
+  </div>
+  <!-- Navbar Ends -->
+
+
+  <!-- Sidebar Starts -->
+  <div class="wrapper-main">
+    <nav class="sidebar">
+      <button class="nav-toggle">
+        <i class="fas fa-angle-left"></i>
+      </button>
+
+      <ul id="primary-navigation" class="nav__list">
+
+        <li class="nav__list-divider divider-a">
+          <h3 class="nav-title">Courses</h3>
+        </li>
+
+        <li class="nav__item" data-tooltip="open folder">
+          <a href="#" class="nav__link">
+          <i>
+            <svg class="sidebar-icon" aria-hidden="true" focusable="false" data-prefix="far" data-icon="eye" class="svg-inline--fa fa-eye fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"></path></svg>
+          </i>
+            <span class="nav__link-text">View Course</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="address">
+          <a href="#" class="nav__link">
+           
+            <i>
+                <svg class="sidebar-icon" aria-hidden="true" focusable="false" data-prefix="far" data-icon="eye" class="svg-inline--fa fa-eye fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"></path></svg>
+              </i>
+            <span class="nav__link-text">View Assignments</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="calender">
+          <a href="#" class="nav__link">
+            <i>
+                <svg class="sidebar-icon" aria-hidden="true" focusable="false" data-prefix="far" data-icon="eye" class="svg-inline--fa fa-eye fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"></path></svg>
+              </i>
+            <span class="nav__link-text">View Quiz</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="new message">
+          <a href="#" class="nav__link">
+            <i>
+                <svg class="sidebar-icon" aria-hidden="true" focusable="false" data-prefix="far" data-icon="eye" class="svg-inline--fa fa-eye fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"></path></svg>
+              </i>
+            <span class="nav__link-text">View Exams</span>
+          </a>
+        </li>
+        <li class="nav__item" data-tooltip="opera">
+            <a href="#" class="nav__link">
+                <i>
+                    <svg class="sidebar-icon" aria-hidden="true" focusable="false" data-prefix="far" data-icon="eye" class="svg-inline--fa fa-eye fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"></path></svg>
+                  </i>
+              <span class="nav__link-text">View Lectures</span>
+            </a>
+          </li>
+          <li class="nav__item" data-tooltip="opera">
+            <a href="#" class="nav__link">
+                <i>
+                    <svg class="sidebar-icon" aria-hidden="true" focusable="false" data-prefix="far" data-icon="eye" class="svg-inline--fa fa-eye fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"></path></svg>
+                  </i>
+              <span class="nav__link-text">View Result</span>
+            </a>
+          </li>
+      </ul>
+ 
+
+       
+    </nav>
+    <!-- Sidebar Ends -->
+
+    <!-- Body Starts -->
+    <div class="container main-div-home" style="padding: 30px 30px;">
+    <div class="spacer">
+       
+    </div>
+    <h3>
+        Student's Dashboard
+    </h3>
+      <div class="row justify-content-between align-items-center row1">
+        <div class="col-xl-3 first-row-col1">
+          <p class="div-title">
+             Courses
+          </p>
+            <p class="div-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus deleniti dicta, expedita quo illum molestias
+            voluptatum enim itaque dolore officiis, eos vero iure necessitatibus et
+            facilis minima. Magnam, vitae error! 
+          </p>
+          <div class="row1-button-div">
+            <button class="row1-btn">
+              View Now
+            </button>
+          </div>
+
+        </div>
+
+        <div class="col-xl-5 first-row-col2">
+          <p class="div-title">
+           Exams
+          </p>
+            <p class="div-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus deleniti dicta, expedita quo illum molestias
+            voluptatum enim itaque dolore officiis, eos vero iure necessitatibus et
+            facilis minima. Magnam, vitae error! 
+          </p>
+          <div class="row1-button-div">
+            <button class="row1-btn">
+              View Now
+            </button>
+          </div>
+
+        </div>
+
+        <div class="col-xl-3 first-row-col3">
+        <p class="div-title">
+         Result
+        </p>
+          <p class="div-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Voluptatibus deleniti dicta, expedita quo illum molestias
+          voluptatum enim itaque dolore officiis, eos vero iure necessitatibus et
+          facilis minima. Magnam, vitae error! 
+        </p>
+          <div class="row1-button-div">
+            <button class="row1-btn">
+              View Now
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="row justify-content-center align-items-center row1">
+        
+
+        <div class="col-xl-12 second-row-col1">
+          
+          <p class="div-title">
+            Notifications
+          </p>
+          <p class="div-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Voluptatibus deleniti dicta, expedita quo illum molestias
+          voluptatum enim itaque dolore officiis
+          orem ipsum dolor, sit amet consectetur adipisicing elit.
+          Voluptatibus deleniti dicta, expedita quo illum molestias
+          voluptatum enim itaque dolore officiis
+          orem ipsum dolor, sit amet consectetur adipisicing elit.
+          Voluptatibus deleniti dicta, expedita quo illum molestias
+          voluptatum enim itaque dolore officiis, eos vero iure necessitatibus et
+          orem ipsum dolor, sit a<br/> met consectetur adipisicing elit.
+          Voluptatibus deleniti dicta, expedita quo illum molestias
+          voluptatum enim itaque dolore officiis
+          facilis minima. Magnam, vitae error!</p>
+          <div class="row2-button-div">
+            <button class="row2-btn">
+              View Now
+            </button>
+          </div>
+
+        </div>
+
+         
+      </div>
+
+      <div class="row row3 justify-content-between">
+        <div class="col-xl-6">
+          <p class="div-title">
+           Recent Courses
+          </p>
+          <table class="table table-striped table-background">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xl-6">
+          <p class="div-title">
+            Recent Courses
+           </p>
+          <table class="table table-striped table-background">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="assets/js/index.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

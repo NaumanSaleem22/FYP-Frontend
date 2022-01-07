@@ -253,3 +253,7 @@ font-size:14px;
  transition: 0.5s ease-in;
  color: rgb(182, 182, 182);
 }
+
+.table-background{
+  background-color: white;
+}
